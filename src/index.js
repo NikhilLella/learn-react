@@ -1,17 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <Home />
-  </React.StrictMode>
+ <Router>
+  <Routes>
+    <Route path ="/"  element ={<p>p tag in a route</p>}/>
+  </Routes>
+ </Router>
 );
 
-function Home(){
+function Home(){ //home component
   return (<h1> this is my first react components</h1>);
 }
 // If you want to start measuring performance in your app, pass a function
