@@ -8,13 +8,13 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
  <Router>
   <Routes>
-    <Route path ="/"  element ={<p>p tag in a route</p>}/>
+    <Route path ="/"  element ={<Home/>}/>
   </Routes>
  </Router>
 );
 
 function Home(){ //home component
-  return (<h1> this is my first react components</h1>);
+  return (<h1> Home Router</h1>);
 }
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
